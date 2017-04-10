@@ -1,0 +1,211 @@
+
+/*    Global zeroing    */
+
+* {                                                    /* removes all default padding and margin that browsers add when being rendered */
+  padding: 0;
+  margin: 0;
+}
+
+/*     Heading tags     */
+
+h1{
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+h2{
+  margin-bottom: 10px;
+}
+
+/*     Containers    */
+
+#container{                                         /* this container is centered and is rendered to be half of the body element and 100% of what the browser shows  */
+  height: 100vh;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#quizContainer{                                     /* this element is positioned vertically and horizontally relative to the parent container  */
+  height: 65%;
+  width: 100%;
+  border: 2px #000000 solid;
+  border-radius: 20px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#regiContainer, #loginContainer, #statsContainer{  /* set to no be rendered at the start, there is javascript in place to render these elements as they are needed */
+  display: none;
+  text-align: center;
+  margin: 0px auto;
+}
+
+#chartContainer{
+  margin: 0px auto;
+}
+
+#statsContainer{
+  width: 100%;
+  height: 100%;
+}
+
+.chartStyle{
+  width: 600px;
+  height: 400px;
+}
+
+.userContainer{
+  width: 200px;
+  height: 150px;
+  border:2px black solid;
+  border-radius: 20px;
+}
+
+.ucStyle{
+  margin: 20px;
+  font-weight: bold;
+}
+
+.rowStyle{
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+#confirm{
+  margin: 20px auto;
+  position:
+  background: #0078ae;
+  color: #ffffff;
+  border-radius: 20px;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  display: none;
+}
+
+#answerZone{
+  width: 90%;
+  margin: 10px auto;
+}
+
+#regiLogin{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+#pictureContainer{
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 500px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+/*    Button Styling */
+
+.buttonStyle{
+  height: 50px;
+  width: 125px;
+  margin: 20px auto;
+  display: inline-block;
+  border: solid 2px #0078ae;
+  border-radius: 20px;
+  background-color: #0078ae;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.ucButton{
+  width: 100px;
+  height: 40px;
+  margin-left: 20px;
+  border: solid 2px #0078ae;
+  border-radius: 20px;
+  background-color: #0078ae;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.answerButton{
+  width: 125px;
+  height: 50px;
+  margin: 20px;
+  border: solid 2px #0078ae;
+  border-radius: 20px;
+  background-color: #0078ae;
+  color: #ffffff;
+}
+
+#goBackStatsButton{
+  margin-left: 80px;
+}
+
+/*     Form Styling     */
+
+.formAlign{
+  display: inline-block;
+  margin: 5px 0px;
+}
+
+.labelStyle{
+  width: 75px;
+  text-align: left;
+}
+
+.formStyle{                                      /* this class is positioned vertically and horizontally relative to the parent container  */
+  height: 50%;
+  width: 100%;
+  margin: 30px;
+  border: 2px #0000ff;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*     Loading Styling     */
+
+.loading_style{                                /* this element is positioned vertically and horizontally relative to the body container  */
+    width: 300px;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border: solid 2px #0078ae;
+    border-radius: 20px;
+    background-color: #0078ae;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.radioStyle{
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin: 15px;
+}
+
+.radioLabel{
+  text-align: left;
+  display: inline;
+  margin: 15px;
+}
+
+/*     Show/Hide Styling     */
+
+#qIDHidden, #healHidden{                                              /* set to no be rendered at the start, there is javascript in place to..*/
+  display: none;                                                      /* render these elements as they are needed */
+}
+
+#q3Button, #q4Button, #q5Button, #resultButton, #goBackStatsButton{
+  display: none;
+}
